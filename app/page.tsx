@@ -9,7 +9,7 @@ export default function Home() {
     <main className="shell">
       <section className="hero" aria-labelledby="home-title">
         <p className="eyebrow">Simple Next.js app</p>
-        <h1 id="home-title">Hello, world. Your Next.js app is running.</h1>
+        <h1 id="home-title">Hello, world. My Next.js app is running.</h1>
         <p className="lede">
           Start editing <code>app/page.tsx</code> to shape this into your app.
           The starter includes TypeScript, the App Router, and a clean responsive
