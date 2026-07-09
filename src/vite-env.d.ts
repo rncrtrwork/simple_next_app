@@ -1,0 +1,12 @@
+/// <reference types="vite/client" />
+
+interface ImportMetaEnv {
+  readonly VITE_API_BASE_URL?: string;
+  readonly VITE_SNAPSHOT_PATH?: string;
+  readonly VITE_STREAM_PATH?: string;
+  readonly VITE_TENANT_ID?: string;
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv;
+}
