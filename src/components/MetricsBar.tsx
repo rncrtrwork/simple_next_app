@@ -45,7 +45,6 @@ export function MetricsBar({ metrics }: MetricsBarProps) {
         note={`${formatSignedPercent(metrics.cashDelta)} DOWN`}
         tone={metrics.cashDelta < 0 ? 'negative' : 'positive'}
       />
-      <Metric label="Last Updated" value={metrics.lastUpdated} note={metrics.lastUpdatedDate} />
     </section>
   );
 }

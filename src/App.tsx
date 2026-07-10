@@ -104,14 +104,14 @@ export default function App() {
   };
 
   return (
-    <main className="min-h-screen overflow-x-hidden bg-canvas px-4 py-5 text-ink">
-      <div className="mx-auto w-full max-w-[1530px]">
+    <main className="app-viewport overflow-hidden bg-canvas px-4 py-5 text-ink">
+      <div className="app-frame mx-auto flex w-full max-w-[1530px] flex-col">
         <Header />
         <FolderTabs activeView={activeView} onChange={setView} />
 
-        <section className="terminal-shell">
+        <section className="terminal-shell flex min-h-0 flex-1 flex-col">
           <MetricsBar metrics={metrics} />
-          <div className="ledger-window mt-3 border border-grid bg-canvas shadow-insetLine">
+          <div className="ledger-window mt-3 flex min-h-0 flex-1 flex-col border border-grid bg-canvas shadow-insetLine">
             <Toolbar
               connected={connected}
               lastUpdated={metrics.lastUpdated}
